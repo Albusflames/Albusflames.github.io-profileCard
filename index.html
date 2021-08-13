@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | 3-column preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+	
+	body { }
+	
+	.container {
+		width: 70%;
+		height: 100%;
+		margin-top: 6em;
+		grid-gap: 0px;
+		gap: 0px;
+		position: relative;
+		top: 20%;
+		left: 10%;
+		right: 10%;
+		}
+	
+	.afford{ background-color: teal;
+		border-radius: 0.5em 0em 0em 0.5em;
+		width: 100%;
+	}
+	.space{ background-color: orange;
+		width: 100%;
+	}
+	.cruise{ background-color: darkslategray;
+		border-radius: 0em 0.5em 0.5em 0em;
+		width: 100%;
+		}
+	
+	div{ padding: 1em 2em 1em 2em;
+	width: 10em;
+	height: minmax(50%, auto);
+	color: white;
+	position: relative;
+	font-size: 80%;}
+	
+	.afford a {
+		color: teal;}
+		
+	.space a {
+		color: orange;}
+		
+	.cruise a {
+		color: darkslategray;}
+	
+	a{
+	background-color: white;
+	border-radius: 2em;
+	text-decoration: none;
+	padding: 0.5em;
+	color: darkslategray;
+	bottom: 10%;}
+	
+	@media screen and (max-width:600px) {
+		
+		.container {
+			display: block;
+			left: 5%;
+			top: 0%;
+			right: 10%}
+			
+		.afford {
+			border-radius: 0.5em 0.5em 0em 0em;
+			}
+		.cruise {
+			border-radius: 0em 0em 0.5em 0.5em;}
+			}
+	@media screen and (min-width:600px) {
+		.container {
+			display: flex;
+			}
+			}
+	@media screen and (min-width:1000px) {
+		div {
+			min-height:300px;
+			color: black;
+			font-size: 100%;}
+		div a {
+			position: relative;
+			bottom: -50px;}
+			}
+	
+
+	
+  </style>
+</head>
+<body>
+ <section class= "container">
+  <div class= "afford">
+  <img src= 'images/icon-sedans.svg' alt= 'seden icon'>
+  <h3>Sedans</h3>
+ <p> Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
+  or on your next road trip.</p>
+  <a href= xxx>Learn More</a></div>
+
+ <div class= "space"> 
+ <img src= 'images/icon-suvs.svg' alt= 'suv icon'>
+ <h3>SUVs</h3>
+ <p> Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
+  and off-road adventures.</p>
+<a href= xxx>Learn More</a></div>
+
+ <div class= "cruise"> 
+ <img src= 'images/icon-luxury.svg' alt= 'luxury icon'>
+ <h3>Luxury</h3>
+  <p>Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
+  rental and arrive in style.</p> 
+  <a href= xxx>Learn More</a></div>
+ </section>
+   <button class= 'next'> <a href="profileCard/index.html"> NEXT PAGE </a> </button>
+</body>
+
+</html>
